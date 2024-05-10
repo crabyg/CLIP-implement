@@ -30,6 +30,7 @@ train loss는 꾸준히 감소하는 추세를 보이지만, valid loss는 진�
 ### zeroshot prediction
 test 데이터에서 batch를 4로하여 임의로 4개의 이미지와 4개의 텍스트를 불러온 뒤 1개의 이미지에 대하여 나머지 4개의 텍스트와 코사인 유사도를 비교하여 가장 높은 값을 선택하는 방식으로 zeroshot prediction을 진행
 ![image](https://github.com/crabyg/CLIP-implement/assets/105999203/a25c9963-0226-47a2-a20b-3f04efcc521b)
+
 실제 정답은 'Two boys in front of a soda machine' 이나, 다른 텍스트에 대해 유사도가 가장 높은 경향을 보임. train loss만 감소하였기 때문에 당연한 결과
 ### Discussion
 학습의 성공보단 구현에 초점을 두었기 때문에 실제 CLIP에 비해 적은 데이터와 작은 모델을 사용하였고, 더욱 다양한 실험을 해보지 않았기 때문에 기회가 된다면 제대로 도전해볼 예정
